@@ -1,5 +1,5 @@
 __pycache__/
 *.pyc
 .venv/
-report.json
+/report.json
 !.gitignore
