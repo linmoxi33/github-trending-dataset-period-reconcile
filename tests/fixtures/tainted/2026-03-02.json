@@ -1,0 +1,18 @@
+{
+  "date": "2026-03-02",
+  "captured_at": "2026-03-02T00:00:00+00:00",
+  "source": "fixture",
+  "lists": {
+    "daily": [
+      {
+        "repo": "acme/beta",
+        "url": "https://github.com/acme/beta",
+        "description": "fixture row",
+        "language": "Python",
+        "stars_total": 5200,
+        "forks_total": 1,
+        "stars_period": 200
+      }
+    ]
+  }
+}

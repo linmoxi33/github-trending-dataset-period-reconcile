@@ -1,0 +1,18 @@
+{
+  "date": "2026-05-02",
+  "captured_at": "2026-05-02T01:00:00+00:00",
+  "source": "fixture",
+  "lists": {
+    "daily": [
+      {
+        "repo": "acme/delta",
+        "url": "https://github.com/acme/delta",
+        "description": "fixture row",
+        "language": "Python",
+        "stars_total": 1250,
+        "forks_total": 1,
+        "stars_period": 240
+      }
+    ]
+  }
+}

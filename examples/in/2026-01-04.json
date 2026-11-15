@@ -1,0 +1,18 @@
+{
+  "date": "2026-01-04",
+  "captured_at": "2026-01-04T00:00:00+00:00",
+  "source": "fixture",
+  "lists": {
+    "daily": [
+      {
+        "repo": "acme/alpha",
+        "url": "https://github.com/acme/alpha",
+        "description": "fixture row",
+        "language": "Python",
+        "stars_total": 1260,
+        "forks_total": 1,
+        "stars_period": 150
+      }
+    ]
+  }
+}
