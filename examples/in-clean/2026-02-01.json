@@ -1,0 +1,40 @@
+{
+  "date": "2026-02-01",
+  "captured_at": "2026-02-01T00:00:00+00:00",
+  "source": "fixture",
+  "lists": {
+    "daily": [
+      {
+        "repo": "acme/alpha",
+        "url": "https://github.com/acme/alpha",
+        "description": "fixture row",
+        "language": "Python",
+        "stars_total": 1000,
+        "forks_total": 1,
+        "stars_period": 100
+      }
+    ],
+    "weekly": [
+      {
+        "repo": "acme/alpha",
+        "url": "https://github.com/acme/alpha",
+        "description": "fixture row",
+        "language": "Python",
+        "stars_total": 1000,
+        "forks_total": 1,
+        "stars_period": 500
+      }
+    ],
+    "monthly": [
+      {
+        "repo": "acme/alpha",
+        "url": "https://github.com/acme/alpha",
+        "description": "fixture row",
+        "language": "Python",
+        "stars_total": 1000,
+        "forks_total": 1,
+        "stars_period": 900
+      }
+    ]
+  }
+}

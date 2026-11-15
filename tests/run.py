@@ -141,6 +141,12 @@ class Interface(unittest.TestCase):
         self.assertIn("Verdict", proc.stdout)
         self.assertIn("replay_sha256", proc.stdout)
 
+    def test_clean_example_exits_zero(self):
+        proc = run(os.path.join(ROOT, "examples", "in-clean"), "--json")
+        self.assertEqual(proc.returncode, 0)
+        committed = json.load(open(os.path.join(ROOT, "examples", "out", "clean-report.json")))
+        self.assertEqual(json.loads(proc.stdout)["replay_sha256"], committed["replay_sha256"])
+
     def test_examples_are_reproducible(self):
         example = os.path.join(ROOT, "examples", "out", "report.json")
         proc = run(os.path.join(ROOT, "examples", "in"), "--json")

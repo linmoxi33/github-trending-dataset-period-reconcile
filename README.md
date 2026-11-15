@@ -29,7 +29,13 @@ Does not: model GitHub's ranking algorithm, decide which number is "the true one
 Python 3.8+, zero dependencies, no network:
 
 ```bash
-python3 period_reconcile.py examples/in
+python3 period_reconcile.py examples/in-clean
+```
+
+That prints `Verdict consistent` and exits `0`. `examples/in` is the same tool against an archive with one deliberate window violation, so it exits `1` — that is the detector working, not a failure:
+
+```bash
+python3 period_reconcile.py examples/in          # exit 1: acme/gamma daily > weekly
 ```
 
 Against a real archive directory (files named `YYYY-MM-DD.json`; `latest.json` and `awesome_index.json` are ignored):
@@ -82,6 +88,6 @@ First calibrated reconciliation of the archive's `stars_period` against `stars_t
 python3 tests/run.py
 ```
 
-17 tests, all behavioural (subprocess + exit codes + JSON): clean archive, window violation, gap skipping, 25-hour capture, tolerance sensitivity, missing path, non-snapshot JSON, duplicate dates, replay-hash stability, and reproducibility of `examples/out/report.json`.
+17 tests, all behavioural (subprocess + exit codes + JSON): clean archive, window violation, gap skipping, 25-hour capture, tolerance sensitivity, missing path, non-snapshot JSON, duplicate dates, replay-hash stability, and reproducibility of `examples/out/report.json` and `examples/out/clean-report.json`.
 
 MIT © 2026 linmoxi33

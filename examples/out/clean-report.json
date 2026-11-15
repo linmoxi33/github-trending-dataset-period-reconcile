@@ -1,0 +1,42 @@
+{
+  "archive": {
+    "first": "2026-02-01",
+    "last": "2026-02-02",
+    "snapshots": 2
+  },
+  "calibration": "raw_drift = delta_total - period (upstream formula); norm_residual = delta_total - period * elapsed_hours / 24",
+  "problems": [],
+  "rates": {
+    "hours_max": 24.0,
+    "hours_min": 24.0,
+    "norm_outlier_rate": 0.0,
+    "norm_outliers": 0,
+    "pairs": 1,
+    "raw_outlier_rate": 0.0,
+    "raw_outliers": 0,
+    "skipped_non_consecutive_days": 0,
+    "skipped_unusable_rows": 0,
+    "tolerance": 0.2,
+    "worst": [
+      {
+        "date": "2026-02-02",
+        "delta_total": 120,
+        "expected_total": 120.0,
+        "hours": 24.0,
+        "norm_ratio": 0.0,
+        "norm_residual": 0.0,
+        "period": 120,
+        "prev_date": "2026-02-01",
+        "raw_drift": 0,
+        "repo": "acme/alpha"
+      }
+    ]
+  },
+  "replay_sha256": "fc09f8cdd68ce68cd55dda8abf251215d4f0583f5b15b9255e7d607a6fa2d215",
+  "verdict": "consistent",
+  "windows": {
+    "pairs": 4,
+    "violations": 0,
+    "worst": []
+  }
+}
